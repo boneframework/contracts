@@ -1,22 +1,19 @@
 {
-    "name": "delboy1978uk/blank",
-    "description": "A blank project",
+    "name": "boneframework/contracts",
+    "description": "A crew of interfaces",
     "license": "MIT",
     "authors": [
         {
-            "name": "Derek McLean",
+            "name": "Derek Stephen McLean",
             "email": "delboy1978uk@gmail.com"
         }
     ],
     "require": {
-    },
-    "require-dev":{
-        "codeception/codeception":"^4.2",
-        "codeception/module-asserts": "^2.0"
+        "psr/container": "^2.0"
     },
     "autoload":{
         "psr-4":{
-            "Del\\":"src/"
+            "Bone\\Contracts\\":"src/"
         }
     }
 }
