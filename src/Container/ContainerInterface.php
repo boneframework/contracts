@@ -8,5 +8,5 @@ use Psr\Container\ContainerInterface as PsrContainer;
 
 interface ContainerInterface extends PsrContainer
 {
-    public function factory(callable $callable): callable;
+    public function factory($callable);
 }
