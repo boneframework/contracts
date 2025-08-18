@@ -15,7 +15,8 @@
     },
     "autoload":{
         "psr-4":{
-            "Bone\\Contracts\\":"src/"
+            "Bone\\Contracts\\":"src/Contracts",
+            "Bone\\View\\":"src/View"
         }
     }
 }

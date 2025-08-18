@@ -11,4 +11,5 @@ interface ApiCollectionInterface
     public function getUri(): UriInterface;
     public function getPage(): int;
     public function getTotalPages(): int;
+    public function getTotalRecords(): int;
 }
