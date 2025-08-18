@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Bone\View;
 
 use Barnacle\Container;
-use Bone\Contracts\Container\ContainerInterface;
 
 interface ViewRegistrationInterface
 {
@@ -19,5 +18,5 @@ interface ViewRegistrationInterface
     /**
      * Return an array of view extensions
      */
-    public function addViewExtensions(Container|ContainerInterface $c): array;
+    public function addViewExtensions(Container $c): array;
 }
