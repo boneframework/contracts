@@ -6,5 +6,6 @@ namespace Bone\Contracts\Container;
 
 interface ApiDocProviderInterface
 {
-    public function provideDefaultSettings(): array;
+    public function getDefaultSettings(): array;
+    public function getSettingsFileName(): string;
 }
