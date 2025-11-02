@@ -6,6 +6,6 @@ namespace Bone\Contracts\Container;
 
 interface DefaultSettingsProviderInterface
 {
-    public function getSettingsFileContents(): string;
+    public function getRequiredPackages(): array;
     public function getSettingsFileName(): string;
 }
