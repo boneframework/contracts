@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Bone\Contrtacts\Http;
+
+
+use Bone\Contracts\Container\ContainerInterface;
+
+interface GlobalMiddlewareRegistrationInterface extends MiddlewareRegistrationInterface
+{
+    /**
+     * Return an array of class names already created in getMiddleware
+     * in order to add them to the global middleware stack
+     * The container should only really be used for doing $c->has(Something::class)
+     * e.g. if a middleware is disabled in package config php file, like i18n for instance
+     * @return array
+     */
+    public function getGlobalMiddleware(ContainerInterface $c): array;
+}
