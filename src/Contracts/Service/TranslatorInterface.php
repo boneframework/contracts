@@ -8,5 +8,5 @@ interface TranslatorInterface
 {
     public function translate(string $message, ?string $textDomain = null, ?string $locale = null): string;
     public function getLocale(): string;
-    public function setLocale(string $locale): string;
+    public function setLocale(string $locale): void;
 }
